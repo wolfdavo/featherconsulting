@@ -1,0 +1,106 @@
+.header-logo {
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+}
+
+
+.static {
+  /* margin: auto;
+  margin-top: 16vh; */
+  height: 75vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.spin-left {
+  overflow: hidden;
+  position: absolute;
+  margin: auto;
+  height: 50vh;
+  top: 6.5vh;
+  left: 0;
+  right: 0;
+  -webkit-animation: spinl 80s linear infinite;
+  -moz-animation: spinl 80s linear infinite;
+  animation: spinl 80s linear infinite;
+}
+
+.spin-right {
+  overflow: hidden;
+  position: absolute;
+  margin: auto;
+  height: 50vh;
+  top: 6.5vh;
+  left: 0;
+  right: 0;
+  -webkit-animation: spinr 80s linear infinite;
+  -moz-animation: spinr 80s linear infinite;
+  animation: spinr 80s linear infinite;
+}
+
+/* spin right */
+@-moz-keyframes spinr {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spinr {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spinr {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Spin left */
+@-moz-keyframes spinl {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes spinl {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes spinl {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
