@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
 import './get-in-touch.css';
+import axios from 'axios';
+
+const API_PATH = '../../api/contact';
 
 class ContactModal extends Component {
 
@@ -10,16 +13,30 @@ class ContactModal extends Component {
       fname: '',
       lname: '',
       email: '',
-      message: ''
+      message: '',
+      mailSent: false,
+      error: null
     }
 
-      this.handleFormSubmit = this.handleFormSubmit.bind(this);
+    this.handleFormSubmit = this.handleFormSubmit.bind(this);
   }
 
-  handleFormSubmit(event) {
-    event.preventDefault();
+  handleFormSubmit = e => {
+    e.preventDefault();
     console.log(this.state);
-  }
+    axios({
+      method: 'post',
+      url: `${API_PATH}`,
+      headers: {
+        'content-type': 'application/json'
+      },
+      data: this.state
+    }).then(result => {
+      this.setState({mailSent: result.data.sent})
+    }).catch(error => this.setState({error: error.message}));
+  };
+
+
 
   render() {
     return (<div className="formModal">
@@ -39,27 +56,34 @@ class ContactModal extends Component {
 
                   <div className="form-group">
                     <label>First Name</label>
-                    <input className="form-control" type="text" id="fname" name="firstname" placeholder="Your name.." value={this.state.fname}
-                      onChange={e => this.setState({ fname: e.target.value })}/>
+                    <input className="form-control" type="text" id="fname" name="firstname" placeholder="Your name.." value={this.state.fname} onChange={e => this.setState({fname: e.target.value})}/>
                   </div>
 
                   <div className="form-group">
                     <label>Last Name</label>
-                    <input className="form-control" type="text" id="lname" name="lastname" placeholder="Your last name.." value={this.state.lname} onChange={e => this.setState({ lname: e.target.value })}/>
+                    <input className="form-control" type="text" id="lname" name="lastname" placeholder="Your last name.." value={this.state.lname} onChange={e => this.setState({lname: e.target.value})}/>
                   </div>
 
                   <div className="form-group">
                     <label>Email</label>
-                    <input className="form-control" type="email" id="email" name="email" placeholder="Your email" value={this.state.email} onChange={e => this.setState({ email: e.target.value })}/>
+                    <input className="form-control" type="email" id="email" name="email" placeholder="Your email" value={this.state.email} onChange={e => this.setState({email: e.target.value})}/>
                   </div>
 
                   <div className="form-group">
                     <label>Subject</label>
-                    <textarea className="form-control" id="subject" name="subject" placeholder="How can we help?" onChange={e => this.setState({ message: e.target.value })}
-                      value={this.state.message}></textarea>
+                    <textarea className="form-control" id="subject" name="subject" placeholder="How can we help?" onChange={e => this.setState({message: e.target.value})} value={this.state.message}></textarea>
                   </div>
 
-                  <input className="btn btn-primary" type="submit" onClick={e => this.handleFormSubmit(e)} value="Submit"/>
+                  <div>
+                    {this.state.mailSent &&
+                      <div className="form-group">Thank you for contcting us.</div>
+                    }
+                    {this.state.error  &&
+                      <div className="error">Sorry, we had some problems.</div>
+                    }
+                  </div>
+
+                  <input className="btn btn-primary form-submit-button" type="submit" onClick={e => this.handleFormSubmit(e)} value="Submit"/>
                 </form>
               </div>
 
