@@ -4,9 +4,10 @@
   margin: 0;
   padding: 0;
   background-color: #1f262a;
+  overflow: hidden;
+  font-family: 'Comfortaa', cursive;
 }
 
-.whole-body h1, h2, h3, p{
-  color: #d2d9db;
+.whole-body h1, h2, h3, h4, h5, h6, p, a{
   font-family: 'Comfortaa', cursive;
 }

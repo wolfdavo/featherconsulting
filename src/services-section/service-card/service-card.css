@@ -1,0 +1,30 @@
+.card {
+  max-width: 300px;
+  background-color: #d2d9db;
+  text-align: center;
+  border-radius: 20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin-bottom: 20px;
+}
+
+.card:hover{
+  transform: scale(1.04);
+}
+
+.card-body {
+  height: 375px;
+}
+
+.card-body p, a{
+  color: #1f262a;
+}
+
+.card-body h4 {
+  color: #1190CB;
+  font-weight: bold;
+}
+
+.btn-primary {
+
+}
