@@ -1,5 +1,65 @@
-.bubble {
-  height: 200px;
-  width: 200px;
-  background-color: #fff;
+.bubble-dark,
+.bubble-blue {
+  text-align: center;
+  height: 300px;
+  width: 300px;
+  transition: 0.3s;
+  margin: 30px;
+}
+
+.bubble-dark {
+  background-image: url('./assets/wavycircler-darkfill.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: #d2d9db;
+  padding-top: 110px;
+  animation-duration: 1s;
+}
+
+.bubble-blue {
+  background-image: url('./assets/wavycircler-bluefill.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 55px 60px;
+  animation-duration: 1s;
+}
+
+.bubble-dark:hover {
+  -webkit-filter: drop-shadow(0 0 10px #1190CB);
+  filter: drop-shadow(0 0 10px #1190CB);
+  cursor: pointer;
+}
+
+.bubble-blue:hover {
+  -webkit-filter: drop-shadow(0 0 10px #1190CB);
+  filter: drop-shadow(0 0 10px #1190CB);
+  cursor: pointer;
+}
+
+@keyframes skill-animation-toblue {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes skill-animation-todark {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }

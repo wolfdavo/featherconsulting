@@ -1,0 +1,18 @@
+.skillset-section {
+  padding-top: 100px;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.skills-header {
+  text-align: center;
+  color: #d2d9db;
+}
+
+.bubbles-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+  padding-top: 75px;
+}

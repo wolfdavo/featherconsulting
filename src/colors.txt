@@ -1,0 +1,3 @@
+light text: #d2d9db;
+main-dark: #1f262a;
+main-blue: #1190CB;
