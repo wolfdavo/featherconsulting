@@ -16,13 +16,13 @@ class Services extends Component {
       <div className="cards">
 
         <div data-aos="fade-right" data-aos-duration="500">
-          <ServiceCard title={"WEBSITE MAINTENENCE AND PROBLEM SOLVING"} body={"Can't quite get something to work on your website and want a second eye? I can give you a hand, wether it be front-end styling or back-end scripting - we don't charge a cent until we fix your problem."}/>
+          <ServiceCard title={"WEBSITE MAINTENENCE AND PROBLEM SOLVING"} body={"Can't quite get something to work on your website and want a second eye? I can give you a hand, wether it be front-end styling or back-end scripting - I won't charge a cent until I fix your problem."}/>
         </div>
         <div data-aos="flip-up" data-aos-duration="500">
-          <ServiceCard popular={'popular'} title={"SMALL BUSINESS WEB PAGE"} body={"Are you a small business or organisation looking to get online? Our small business web page package is prefect for you! - NO UP FRONT COST - starting at just USD $30 a month, we will get a beautiful website built and hosted just for you, start to finish."}/>
+          <ServiceCard popular={'popular'} title={"SMALL BUSINESS WEB PAGE"} body={"Are you a small business or organisation looking to get online? My small business web page package is prefect for you! - NO UP FRONT COST - starting at just USD $30 a month, I'll get a beautiful website built and hosted just for you, start to finish."}/>
         </div>
         <div data-aos="fade-left" data-aos-duration="500">
-          <ServiceCard title={"LARGE SCALE WEBSITE DEVELOPMENT"} body={"If you're looking for something a little more complex - such as database architecture, custom e-commerce sites, or anything involving a bit more backend work we can help too! Pricing by obligation-free quote."}/>
+          <ServiceCard title={"LARGE SCALE WEBSITE DEVELOPMENT"} body={"If you're looking for something a little more complex - such as database architecture, custom e-commerce sites, or anything involving a bit more backend work I can help too! Pricing by obligation-free quote."}/>
         </div>
       </div>
 

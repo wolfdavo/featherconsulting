@@ -1,0 +1,23 @@
+.previous-work-section {
+  width: 100%;
+  min-height: 100vh;
+  margin-bottom: 100px;
+}
+
+
+.portfolio-header {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color: #d2d9db;
+}
+
+.seedpodz{
+  background-image: url('./assets/seedpodz.PNG');
+}
+
+.bintowa{
+  background-image: url('./assets/bintowa.PNG');
+  background-repeat: no-repeat;
+  background-size: cover;
+}

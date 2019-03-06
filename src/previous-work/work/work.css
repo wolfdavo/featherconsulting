@@ -1,0 +1,21 @@
+.work{
+  text-align: center;
+  width: 100%;
+  transition: 0.3s;
+  height: 30vh;
+  padding-top: 12vh;
+}
+
+.work>a {
+  color: #d2d9db;
+  text-decoration: none;
+}
+
+.work:hover{
+  transform: scale(1.05);
+}
+
+.work h2{
+  font-weight: 1000;
+  text-shadow: 0 0 20px #1f262a;
+}
