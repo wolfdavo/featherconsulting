@@ -6,9 +6,12 @@
   -webkit-transition: 0.5s;
   transition: 0.5s;
   margin-bottom: 20px;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, .75);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, .75);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, .75);
 }
 
-.card:hover{
+.card:hover {
   transform: scale(1.04);
 }
 
@@ -16,7 +19,7 @@
   height: 375px;
 }
 
-.card-body p, a{
+.card-body p, a {
   color: #1f262a;
 }
 
@@ -25,6 +28,28 @@
   font-weight: bold;
 }
 
-.btn-primary {
+.popular {
+  border-radius: 20px;
+  background-color: #1190CB;
+  -webkit-box-shadow: 0px -20px 0px 0px rgba(17, 144, 203, 1);
+  -moz-box-shadow: 0px -20px 0px 0px rgba(17, 144, 203, 1);
+  box-shadow: 0px -20px 0px 0px rgba(17, 144, 203, 1);
+}
 
+.popular>div {
+  padding: 0;
+  text-align: center;
+}
+
+.popular>div>p {
+  color: #d2d9db;
+  padding: 0;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+@media screen (max-width 618px) {
+  .popular{
+    margin-top: 50px;
+  }
 }
