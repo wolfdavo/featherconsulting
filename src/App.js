@@ -3,6 +3,7 @@ import Header from './header/logo.js';
 import Services from './services-section/services.js';
 import SkillsetSection from './skillset/skillset.js';
 import PreviousWork from './previous-work/previous-work.js'
+import Footer from './footer/footer.js'
 import './App.css';
 
 class App extends Component {
@@ -13,6 +14,7 @@ class App extends Component {
         <Services/>
         <SkillsetSection/>
         <PreviousWork/>
+        <Footer/>
       </div>
 
     );

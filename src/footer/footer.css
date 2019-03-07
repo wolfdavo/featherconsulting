@@ -1,0 +1,32 @@
+.footer {
+  width: 100%;
+  min-height: 30vh;
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-bottom: 100px;
+}
+
+.footer-element {
+  display: flex;
+  width: 150px;
+  height: 150px;
+  color: #1190CB;
+  margin: auto;
+  transition: 0.4s;
+  text-align: center;
+
+}
+
+.footer-element svg {
+  margin: auto;
+  width: 150px;
+  height: 150px;
+  fill: #1190CB;
+}
+
+.footer-element:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+}
