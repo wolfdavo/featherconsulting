@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import './get-in-touch.css';
 import axios from 'axios';
 
-const API_PATH = '../../api/contact';
+const API_PATH = './contact.php';
 
 class ContactModal extends Component {
 
@@ -32,7 +32,7 @@ class ContactModal extends Component {
       },
       data: this.state
     }).then(result => {
-      this.setState({mailSent: result.data.sent})
+      this.setState({mailSent: true})
     }).catch(error => this.setState({error: error.message}));
   };
 
