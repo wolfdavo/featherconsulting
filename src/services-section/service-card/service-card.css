@@ -15,10 +15,6 @@
   transform: scale(1.04);
 }
 
-.card-body {
-  height: 375px;
-}
-
 .card-body p, a {
   color: #1f262a;
 }
