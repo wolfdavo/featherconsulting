@@ -21,6 +21,13 @@ class SkillsetSection extends Component {
 
         <Skill float="right" body="WordPress" details="I have used WordPress for over 2 years now. It is perfect for blogs or any site where you want to publish lots of information regularly."/>
 
+        <Skill float="right" body="Photoshop" details="With past experience in graphic design, I use photoshop along with some other tools to design logos and branding for your business."/>
+
+        <Skill float="right" body="Marketing" details="I am very familiar with Facebook's advertising algorithms. This is usefull when it comes to marketing, and helps to get better results."/>
+
+        <Skill float="right" body="IT Knowledge" details="Growing up with computers my whole life and having a passion for understanding how they work is usefull for solving odd problems."/>
+
+
       </div>
     </div>);
   }
